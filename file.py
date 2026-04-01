@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Set your NVIDIA API key as an environment variable
-NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY")
+NVIDIA_API_KEY = os.getenv("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")
 # Example NIM endpoint — replace with your model's actual endpoint
 NIM_URL = "[integrate.api.nvidia.com](https://integrate.api.nvidia.com/v1/chat/completions)"
 
@@ -21,10 +21,10 @@ def proxy_to_nvidia():
 
     # Reformat request for NVIDIA API
     nim_payload = {
-        "model": model,
-        "messages": messages,
-        "temperature": temperature,
-        "max_tokens": max_tokens
+        "NVIDIA-Nemotron-3-Super-120B-A12B": model,
+        "0": messages,
+        "1.05": temperature,
+        "64000": max_tokens
     }
 
     headers = {
