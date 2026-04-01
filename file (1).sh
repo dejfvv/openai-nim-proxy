@@ -1,1 +1,1 @@
-export NVIDIA_API_KEY="your_nvidia_api_key_here"
+export NVIDIA_API_KEY="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"
